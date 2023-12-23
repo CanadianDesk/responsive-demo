@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 100svw;
+    height: 100svh;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper .white-bgnd {
+    background-color: white;
+}
+
+.wrapper .grad-bgnd {
+    background: linear-gradient(173deg, #ffffff 60%, #104373 60%);
+}
+
+.wrapper .blue-bgnd {
+    background-color: #104373;
+    height: 100svh;
+}
+
+#logo {
+    height: auto;
+    display: flex;
+    margin: auto;
+    padding: 10px;   
+    width: 230px; 
+    justify-content: center;
+}
+
+.wrapper h1 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #104373;
+    text-align: center;
+}
+
+#break {
+    display: inline;
+}
+
+#leaderboard-preview {
+    height: auto;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 267px;
+}
+
+.wrapper .bullets {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    gap: 23px;
+}
+
+.wrapper .bullets .icon-wrapper {
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    width: 23px;
+    height: 23px;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .bullets .icon svg {
+    fill:#104373;  
+    width: 13px;
+    height: auto;
+}
+
+.wrapper .bullets .bullet {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .bullets .bullet-text {
+    padding: 10px;
+}
+
+#CTA-button {
+    margin: auto;
+    cursor: pointer;
+    width: 180px;
+    outline: 0;
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #104373;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    color: #104373;
+    border-color: #104373;
+    text-decoration: none;
+}
+
+#CTA-button:hover {
+    color: white;
+    border-color: white;
+    background-color: #104373;
+}
+
+/* text line break */
+@media (min-width: 431px) {
+    #break {
+        display: none;
+    }
+}
+
+/* wide screens (tablet) */
+@media (min-width: 768px) {
+    .wrapper h1 {
+        font-size: 2svw;
+    }
+    #logo {
+        padding: 1.2svw;
+        width: 30svw;
+    }
+    #leaderboard-preview {
+        width: 35svw;
+    }
+    
+    .wrapper .bullets {
+        gap: 3svw;
+    }
+
+    .wrapper .bullets .bullet {
+        font-size: 1.25svw;
+    }
+    .wrapper .bullets .icon-wrapper {
+        width: 3svw;
+        height: 3svw;
+    }
+    .wrapper .bullets .icon svg {
+        fill:#104373;  
+        width: 1.7svw;
+        height: auto;
+    }    
+
+    #CTA-button {
+        width: 23svw;
+        font-size: 2svw;
+    }
+}
+
