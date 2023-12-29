@@ -5,15 +5,16 @@
     padding: 0;
 }
 
+img {
+    max-width: 100svw;
+}
+
 .wrapper a {
     text-decoration: none;
 }
 
 .wrapper {
-    width: 100svw;
-    height: 100svh;
     text-align: center;
-    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -34,14 +35,14 @@
     height: auto;
     display: flex;
     margin: auto;
-    padding: 10px;   
-    width: 230px; 
+    padding: 4svw;   
+    width: 90svw; 
     justify-content: center;
 }
 
 .wrapper h1 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 6svw;
     color: #104373;
     text-align: center;
 }
@@ -54,39 +55,39 @@
     height: auto;
     display: flex;
     margin: auto;
-    padding: 10px;
-    width: 267px;
+    padding: 4svw;
+    width: 85svw;
 }
 
 .wrapper .bullets {
     display: flex;
-    padding: 10px;
-    flex-direction: row;
+    padding: 3svw;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    font-size: 14px;
-    gap: 23px;
+    font-size: 6svw;
+    gap: 1svh;
 }
 
 .wrapper .bullets .icon-wrapper {
     display: flex;
     background-color: white;
     border-radius: 50%;
-    width: 23px;
-    height: 23px;
+    width: 10svw;
+    height: 10svw;
     justify-content: center;
     align-items: center;
 }
 
 .wrapper .bullets .icon svg {
     fill:#104373;  
-    width: 13px;
+    width: 6svw;
     height: auto;
 }
 
 .wrapper .bullets .bullet {
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,15 +101,16 @@
 #CTA-button {
     margin: auto;
     cursor: pointer;
-    width: 180px;
+    height: auto;
+    width: 80svw;
     outline: 0;
     display: block;
     font-weight: 700;
     text-align: center;
     background-color: white;
     border: 1px solid #104373;
-    padding: 10px;
-    font-size: 16px;
+    padding: 1.25svw;
+    font-size: 6svw;
     border-radius: 0.5rem;
     color: #104373;
     border-color: #104373;
@@ -121,33 +123,33 @@
     background-color: #104373;
 }
 
-/* text line break */
-@media (min-width: 431px) {
+/* wider screens (tablet+) */
+@media (min-width: 435px) {
     #break {
         display: none;
     }
-}
 
-/* wide screens (tablet) */
-@media (min-width: 768px) {
-    .wrapper h1 {
-        font-size: 2svw;
-    }
     #logo {
         padding: 1.2svw;
         width: 30svw;
     }
+
+    .wrapper h1 {
+        font-size: 2svw;
+    }
+
     #leaderboard-preview {
         width: 35svw;
+        padding: 10px;
     }
     
     .wrapper .bullets {
         gap: 3svw;
+        flex-direction: row;
+        font-size: 1.25svw;
+        padding: 10px;
     }
 
-    .wrapper .bullets .bullet {
-        font-size: 1.25svw;
-    }
     .wrapper .bullets .icon-wrapper {
         width: 3svw;
         height: 3svw;
